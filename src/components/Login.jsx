@@ -23,8 +23,8 @@ const Login = ({ onLogin }) => {
   // Product array with video, name, and price
   const products = [
     { video: productVideo1, name: "Smart Watch", price: "$199.99" },
-    { video: productVideo2, name: "Wireless Headphones", price: "$149.99" },
-    { video: productVideo3, name: "Bluetooth Speaker", price: "$249.99" },
+    { video: productVideo2, name: "Mobile phones", price: "$149.99" },
+    { video: productVideo3, name: "Laptops", price: "$249.99" },
   ];
 
   // Function to change the video index (next video)
