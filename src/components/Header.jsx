@@ -1,38 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Using Link to navigate to routes
+import { Link } from 'react-router-dom';
 
 const Header = ({ onLogin }) => {
   return (
-    <header className="flex justify-between items-center p-6 bg-yellow-200"> {/* Light yellow background */}
+    <header className="flex justify-between items-center p-6 bg-yellow-200 shadow-md">
       <div className="text-gray-800 font-bold text-3xl">I FORT</div>
-      <div className="flex flex-1 justify-center items-center space-x-4">
-        {/* Home Button to navigate to Hero Section */}
+
+      <div className="flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-4">
         <Link
-          to="/hero" // Navigate to the hero page
-          className="text-xl text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
+          to="/hero"
+          className="text-lg text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
         >
           Home
         </Link>
-
-        {/* Category Buttons */}
         <Link
           to="/category/Mobiles"
-          className="text-xl text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
+          className="text-lg text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
         >
           Mobiles
         </Link>
         <Link
           to="/category/All"
-          className="text-xl text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
+          className="text-lg text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
         >
           All Products
         </Link>
       </div>
 
-      {/* Logout Button */}
       <button
-        onClick={() => onLogin(false)} // Handle logout
-        className="text-xl text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
+        onClick={() => onLogin(false)}
+        className="text-lg text-gray-800 border border-yellow-500 px-4 py-2 rounded-full hover:bg-yellow-400 hover:text-white transition duration-300"
       >
         Logout
       </button>
