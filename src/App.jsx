@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductCategory from './components/ProductCategory';
@@ -14,21 +14,26 @@ function App() {
 
   return (
     <Router>
-      {isLoggedIn && <Header onLogin={handleLogout} />}
+      {/* Header with dynamic Login/Logout button */}
+      <Header isLoggedIn={isLoggedIn} onLogin={setIsLoggedIn} />
 
       <main className="flex-1">
         <Routes>
           <Route
             path="/"
-            element={isLoggedIn ? <Navigate to="/hero" /> : <Login onLogin={handleLogin} />}
+            element={<Hero isLoggedIn={isLoggedIn} />} // Pass the login state to Hero
+          />
+          <Route
+            path="/login"
+            element={<Login onLogin={handleLogin} />} // Login component with onLogin handler
           />
           <Route
             path="/hero"
-            element={isLoggedIn ? <Hero /> : <Navigate to="/" />}
+            element={<Hero isLoggedIn={isLoggedIn} />} // Hero page is accessible
           />
           <Route
             path="/category/:categoryName"
-            element={isLoggedIn ? <ProductCategory /> : <Navigate to="/" />}
+            element={isLoggedIn ? <ProductCategory /> : <Hero />} // Restrict access to categories if not logged in
           />
         </Routes>
       </main>

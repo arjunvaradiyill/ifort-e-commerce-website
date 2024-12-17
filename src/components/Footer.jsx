@@ -30,14 +30,37 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-yellow-700">Follow Us</h3>
             <div className="flex justify-center space-x-6">
               {/* Social media links */}
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors duration-300">
-                <i className="fab fa-facebook-f text-2xl"></i>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i className="fab fa-facebook-f text-3xl"></i>
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors duration-300">
-                <i className="fab fa-instagram text-2xl"></i>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i className="fab fa-instagram text-3xl"></i>
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors duration-300">
-                <i className="fab fa-twitter text-2xl"></i>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i className="fab fa-twitter text-3xl"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
+              >
+                <i className="fab fa-linkedin-in text-3xl"></i>
               </a>
             </div>
           </div>
@@ -46,8 +69,12 @@ const Footer = () => {
           <div className="flex-1 min-w-[250px] text-right">
             <h3 className="text-xl font-semibold mb-4 text-yellow-700">Contact Us</h3>
             <ul>
-              <li>Email: <a href="mailto:contact@ifort.com" className="hover:text-yellow-500 transition-colors duration-300">contact@ifort.com</a></li>
-              <li>Phone: <span className="hover:text-yellow-500">+1 234 567 890</span></li>
+              <li>
+                Email: <a href="mailto:contact@ifort.com" className="hover:text-yellow-500 transition-colors duration-300">contact@ifort.com</a>
+              </li>
+              <li>
+                Phone: <span className="hover:text-yellow-500">+1 234 567 890</span>
+              </li>
               <li>Address: 123 Main St, City, Country</li>
             </ul>
           </div>
