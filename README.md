@@ -89,8 +89,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any questions or feedback, feel free to reach out at [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, feel free to reach out at arjunvaradiyil203@gmail.com,9946642065
 
 --- 
-
-You can customize the file further based on your specific project details.
