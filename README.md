@@ -1,4 +1,3 @@
-Here's a sample `README.md` file for your e-commerce website created using Vite, React, and JSX:
 
 ---
 
